@@ -1,0 +1,89 @@
+.price {
+  &__title {
+    @include mainTitle();
+  }
+}
+
+.plan {
+  @include planText();
+  padding-bottom: 130px;
+  width: 268px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &-wrapper {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  &__body {
+    padding-bottom: 22px;
+  }
+
+  &__price {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    border: 1px solid #9c9a97;
+    font-family: "Roboto Slab", serif;
+    color: $mainTextColor;
+
+    &-price {
+      font-size: 36px;
+    }
+  }
+
+  &__plan-per {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  &__currency {
+    font-size: 24px;
+    vertical-align: 18px;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-bottom: 40px;
+    list-style: none;
+  }
+
+  &__button {
+    @include planText();
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #9c9a97;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &:hover &__name {
+    color: $brandColor;
+  }
+
+  &:hover &__body {
+    outline: 1px solid $brandColor;
+  }
+
+  &:hover &__price {
+    background-color: $brandColor;
+    border-color: transparent;
+    color: $mainColor;
+  }
+
+  &:hover &__button {
+    color: $mainColor;
+    background-color: $brandColor;
+    border-color: transparent;
+  }
+}

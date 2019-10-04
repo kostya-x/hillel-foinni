@@ -1,0 +1,120 @@
+@import 'mixins';
+
+.header {
+  position: relative;
+}
+
+.slider {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  overflow: hidden;
+  background-color: #020505;
+  background-image: url('../img/slider/slide-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__title {
+    padding-top: 120px;
+    @include marginTopBottomZero();
+    font-family: "Exo", sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 36px;
+    color: $mainColor;
+    text-align: center;
+    text-transform: capitalize;
+
+    &--brand-color {
+      font-weight: bolder;
+      color: $brandColor;
+      text-transform: uppercase;
+    }
+  }
+
+  &__text {
+    @include marginTopBottomZero();
+    max-width: 920px;
+    color: $mainColor;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+
+  &__title + &__text {
+    padding-top: 50px;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 252, 244, 0.5);
+}
+
+.logo {
+  &__link {
+    text-decoration: none;
+  }
+
+  &__text {
+    @include marginTopBottomZero();
+
+    &--foi {
+      font-family: 'Roboto', sans-serif;
+      font-size: 40px;
+      line-height: 36px;
+      color: $mainColor;
+    }
+    &--nni {
+      font-family: "Pacifico", serif;
+      font-size: 40px;
+      line-height: 36px;
+      color: $brandColor;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.navigation {
+  padding-right: 65px;
+  padding-left: 65px;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    color: $mainColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $brandColor;
+      border-bottom: 1px solid $brandColor;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   padding-bottom: 155px;
 
   &__title {
-    @include text($mainFont, 30px, 600, 36px, $mainTextColor, capitalize, inherit);
+    @include text($mainFont, 30px, 600, 36px, $mainTextColor, capitalize, center);
     padding-bottom: 70px;
   }
 

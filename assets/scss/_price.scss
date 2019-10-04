@@ -1,6 +1,6 @@
 .price {
   &__title {
-    @include text($mainFont, 30px, 600, 36px, $baseTextColor, capitalize, center);
+    @include text($mainFont, 30px, 600, 36px, $mainTextColor, capitalize, center);
   }
 }
 

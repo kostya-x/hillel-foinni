@@ -260,7 +260,7 @@
   line-height: 36px;
   color: #454546;
   text-transform: capitalize;
-  text-align: inherit;
+  text-align: center;
   padding-bottom: 70px;
 }
 
@@ -445,7 +445,7 @@
   font-size: 30px;
   font-weight: 600;
   line-height: 36px;
-  color: #8f8e91;
+  color: #454546;
   text-transform: capitalize;
   text-align: center;
 }

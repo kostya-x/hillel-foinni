@@ -16,33 +16,17 @@
   background-position: center;
 
   &__title {
+    @include text($sliderTitleModifier, 48px, 500, 36px, $mainColor, capitalize, center);
     padding-top: 120px;
-    @include marginTopBottomZero();
-    font-family: "Exo", sans-serif;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 36px;
-    color: $mainColor;
-    text-align: center;
-    text-transform: capitalize;
 
     &--brand-color {
-      font-weight: bolder;
-      color: $brandColor;
-      text-transform: uppercase;
+      @include text(inherit, inherit, 900, inherit, $brandColor, uppercase, inherit);
     }
   }
 
   &__text {
-    @include marginTopBottomZero();
+    @include text($mainFont, 18px, lighter, 36px, $mainColor, capitalize, center);
     max-width: 920px;
-    color: $mainColor;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 36px;
-    text-transform: capitalize;
   }
 
   &__title + &__text {
@@ -70,20 +54,11 @@
   }
 
   &__text {
-    @include marginTopBottomZero();
-
     &--foi {
-      font-family: 'Roboto', sans-serif;
-      font-size: 40px;
-      line-height: 36px;
-      color: $mainColor;
+      @include text($mainFont, 40px, 600, 36px, $mainColor, none, inherit);
     }
     &--nni {
-      font-family: "Pacifico", serif;
-      font-size: 40px;
-      line-height: 36px;
-      color: $brandColor;
-      text-transform: uppercase;
+      @include text($logoModifier, 40px, 600, 36px, $brandColor, uppercase, inherit);
     }
   }
 }
@@ -105,11 +80,9 @@
   }
 
   &__link {
+    @include text($mainFont, 14px, lighter, 36px, $mainColor, none, inherit);
     padding-top: 13px;
     padding-bottom: 13px;
-    font-family: "Roboto";
-    font-weight: lighter;
-    color: $mainColor;
     text-decoration: none;
 
     &:hover {

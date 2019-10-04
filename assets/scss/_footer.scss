@@ -20,35 +20,25 @@
   max-width: 320px;
 
   &__title {
+    @include text($mainFont, 18px, 600, 36px, $whiteColor, capitalize, left);
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 15px;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-    color: $whiteColor;
   }
 
   &__text {
+    @include text($mainFont, 14px, lighter, 36px, $baseTextColor, none, left);
     margin-top: 0;
     margin-bottom: 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 30px;
-    color: $baseTextColor;
   }
 }
 
 .quick-links {
   &__title {
+    @include text($mainFont, 18px, 600, 36px, $whiteColor, capitalize, left);
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 15px;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-    color: $whiteColor;
   }
 
   &__list {
@@ -65,24 +55,17 @@
   }
 
   &__link {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-    line-height: 30px;
-    color: $baseTextColor;
+    @include text($mainFont, 14px, lighter, 30px, $baseTextColor, capitalize, left);
     text-decoration: none;
   }
 }
 
 .social {
   &__title {
+    @include text($mainFont, 18px, 600, 36px, $whiteColor, capitalize, left);
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 5px;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 36px;
-    color: $whiteColor;
   }
 
   &__link {
@@ -119,30 +102,22 @@
   }
 
   &__input {
+    @include text($mainFont, 14px, lighter, 36px,$baseTextColor, none, left);
     padding: 3px 8px;
     width: 100%;
     max-width: 250px;
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 14px;
-    line-height: 36px;
     font-style: italic;
-    color: $baseTextColor;
     border: 1px solid #838484;
     background-color: transparent;
   }
 
   &__button {
+    @include text($mainFont, 18px, lighter, 36px, $mainColor, capitalize, center);
     margin-top: 16px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: $brandColor;
     border: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    color: $mainColor;
-    line-height: 36px;
     cursor: pointer;
   }
 }

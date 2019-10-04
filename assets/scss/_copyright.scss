@@ -1,10 +1,6 @@
 .copyright {
   padding-top: 18px;
   padding-bottom: 18px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 36px;
-  color: $baseTextColor;
-  text-align: center;
+  @include text($mainFont, 14px, 400, 36px, $baseTextColor, none, center);
   background-color: $blackColor;
 }

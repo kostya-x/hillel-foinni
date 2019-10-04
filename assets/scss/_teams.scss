@@ -2,8 +2,8 @@
   padding-bottom: 155px;
 
   &__title {
+    @include text($mainFont, 30px, 600, 36px, $mainTextColor, capitalize, inherit);
     padding-bottom: 70px;
-    @include mainTitle();
   }
 
   &__infos {
@@ -56,22 +56,15 @@
     padding-bottom: 16px;
     background-color: $mainTextColor;
     opacity: 0.94;
-    text-transform: capitalize;
-    color: #fffcf4;
     text-align: center;
   }
 
   &__name {
-    @include marginTopBottomZero();
-    font-family: "Robot", sans-serif;
-    font-size: 18px;
+    @include text($mainFont, 18px, 600, 36px, $mainColor, capitalize, inherit);
   }
 
   &__position {
-    @include marginTopBottomZero();
-    font-family: "Robot", sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
+    @include text($mainFont, 14px, lighter, 36px, $mainColor, capitalize, inherit);
   }
 
   &__social {

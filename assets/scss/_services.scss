@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 
   &__title {
-    @include mainTitle();
+    @include text($mainFont, 30px, 600, 36px, $mainTextColor, capitalize, center);
 
     &--foinni {
       color: $brandColor;
@@ -13,15 +13,9 @@
 
   &__text {
     @include marginLeftRightAuto();
-    @include marginTopBottomZero();
+    @include text($mainFont, 18px, lighter, 30px, $baseTextColor, none, center);
     max-width: 920px;
     padding-top: 50px;
-    font-family: "Robot", sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    color: $baseTextColor;
   }
 }
 
@@ -67,24 +61,13 @@
   }
 
   &__title {
-    @include marginTopBottomZero();
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    line-height: 45px;
-    text-transform: capitalize;
-    text-align: center;
-    color: $mainTextColor;
+    @include text($mainFont, 24px, 500, 45px, $mainTextColor, capitalize, center);
   }
 
   &__text {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
-    font-family: "Robot", sans-serif;
-    font-weight: lighter;
-    font-size: 14px;
-    line-height: 30px;
-    color: $baseTextColor;
-    text-align: center;
+    @include text($mainFont, 14px, lighter, 30px, $baseTextColor, none, center);
   }
 }
